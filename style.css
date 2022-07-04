@@ -22,7 +22,7 @@ ul{
 }
 /* Logo + titulo + barra de navegacion */
 header{
-    background-color:#141911 ;
+    background-color:#672544 ;
     padding: 30px 20px;
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@ header{
 }
 /* logp */
 .header__content div h3 a{ 
-    color: #ff5d0f;
+    color: #fe7363;
 }
 /* barra de navegacion */
 .content__navbar{
@@ -54,12 +54,16 @@ header{
 }
 
 .content__navbar li a{
-    color: #ff5d0f;
+    color: #fe7363;
     border-bottom:solid 1px;
+}
+
+.content__navbar li a:hover{
+    color:#ffaf6f ;
 }
 /* buscador + ofertas  + catalogo*/
 .main{
-    background-color:#0d4a6e ;
+    background-image:linear-gradient(#88324a,#ffaf6f);
     padding: 20px 30px;
 }
 
@@ -70,26 +74,46 @@ header{
 }
 /* Buscador */
 .buscador{
-    background-color: #141911;
+    background-color: #672544;
     padding: 20px 30px;
     height: 100px;
     width: 330px;
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: background-color 1s;
+}
+
+.buscador:hover{
+    background-color: #ffaf6f;
 }
 
 .buscador__title{
-    color: #ff5d0f;
+    color: #fe7363;
     font-size: 25px;
     font-weight: bold;
 }
 /* Ofertas */
 .ofertas{
-    background-color:#141911 ;
+    background-color:#672544 ;
     padding: 20px;
     width: 1000px;
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+    animation-name: Ofertasc;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Ofertasc {
+    0%{
+        background-color:#672544 ;
+    }
+    50%{
+        background-color:#ffaf6f
+    }
+    100%{
+        background-color:#672544 ;
+    }    
 }
 
 .ofertas__header{
@@ -104,7 +128,7 @@ header{
     font-size: 60px;
     text-align: center;
     padding-bottom: 20px;
-    color: #ff5d0f;
+    color: #fe7363;
 }
 
 .ofertas__title{
@@ -129,7 +153,7 @@ header{
 .catalago__title{
     margin-bottom: 20px;
     text-align: center;
-    color: #ff5d0f;
+    color: #fe7363;
     font-size: 40px;
 }
 
@@ -140,11 +164,17 @@ header{
 }
 
 .card{
-    background-color: #141911;
+    background-color: #672544;
     padding: 20px;
     width: 400px;
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+    transition: background-color 1s, transform 0.3s;
+}
+
+.card:hover{
+    background-color:#ffaf6f;
+    transform: translatey(-15px);
 }
 
 .card__header{
@@ -159,7 +189,7 @@ header{
 
 .card__header__title{
     background-color:rgba(0, 20, 0, 0.5);
-    color: #141911;
+    color: #672544;
     padding: 8px;
     position: absolute;
     right: 0;
@@ -170,10 +200,9 @@ header{
 }
 
 .card__title{
-    color: #ff5d0f;
+    color: #fe7363;
     margin-bottom: 20px;
     font-size: 25px;
-
 }
 
 .card__Description{
@@ -197,7 +226,7 @@ header{
 }
 /* Pie de pagina */
 .footer{
-    background-color: #fffbed;
+    background-image:linear-gradient(#ffaf6f,#ba4a56);
     padding: 20px 30px;
 }
 
